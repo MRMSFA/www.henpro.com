@@ -1,0 +1,1028 @@
+/*=========================================================
+  HenPro Electric Inc
+  animations.css
+  PART 1
+=========================================================*/
+
+/*==============================
+ROOT TRANSITIONS
+==============================*/
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+/*==============================
+KEYFRAMES
+==============================*/
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(35px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-35px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+        opacity:0;
+        transform:translateX(-40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes fadeRight{
+
+    from{
+        opacity:0;
+        transform:translateX(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes zoomIn{
+
+    from{
+        opacity:0;
+        transform:scale(.9);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+@keyframes rotateIn{
+
+    from{
+        opacity:0;
+        transform:rotate(-10deg) scale(.9);
+    }
+
+    to{
+        opacity:1;
+        transform:rotate(0deg) scale(1);
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.03);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/*==============================
+SAFE REVEAL
+IMPORTANT:
+Content kabhi hidden nahi rahega
+==============================*/
+
+.reveal{
+
+    transition:
+
+    opacity .8s ease,
+
+    transform .8s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:none;
+
+}
+
+/*==============================
+PAGE LOADER
+==============================*/
+
+.page-loaded{
+
+    animation:fadeIn .8s ease;
+
+}
+
+/*==============================
+HERO
+==============================*/
+
+.hero-content h1{
+
+    animation:fadeDown 1s ease;
+
+}
+
+.hero-content p{
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+.hero-content .btn{
+
+    animation:zoomIn 1.4s ease;
+
+}
+
+/*==============================
+PAGE TITLE
+==============================*/
+
+.page-title h1{
+
+    animation:fadeDown .8s ease;
+
+}
+
+.page-title p{
+
+    animation:fadeUp 1s ease;
+
+}
+
+/*==============================
+IMAGES
+==============================*/
+
+img{
+
+    transition:
+
+    transform .4s ease,
+
+    filter .4s ease;
+
+}
+
+.image-hover{
+
+    overflow:hidden;
+
+}
+
+.image-hover img:hover{
+
+    transform:scale(1.08);
+
+}
+
+/*==============================
+CARDS
+==============================*/
+
+.card,
+
+.service-card,
+
+.project-card,
+
+.why-card,
+
+.contact-card,
+
+.certificate-box,
+
+.estimate-box,
+
+.info-card,
+
+.why-contact-card{
+
+    transition:
+
+    transform .35s ease,
+
+    box-shadow .35s ease;
+
+}
+
+.card:hover,
+
+.service-card:hover,
+
+.project-card:hover,
+
+.why-card:hover,
+
+.contact-card:hover,
+
+.certificate-box:hover,
+
+.estimate-box:hover,
+
+.info-card:hover,
+
+.why-contact-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.12);
+
+}
+
+/*==============================
+ICONS
+==============================*/
+
+.card i,
+
+.service-card i,
+
+.why-card i,
+
+.info-card i,
+
+.contact-card i{
+
+    transition:
+
+    transform .35s ease,
+
+    color .35s ease;
+
+}
+
+.card:hover i,
+
+.service-card:hover i,
+
+.why-card:hover i,
+
+.info-card:hover i,
+
+.contact-card:hover i{
+
+    transform:scale(1.15);
+
+}
+
+/*==============================
+BUTTONS
+==============================*/
+
+.btn,
+
+.quote-btn,
+
+button,
+
+input[type=submit]{
+
+    transition:
+
+    transform .3s ease,
+
+    box-shadow .3s ease,
+
+    background .3s ease;
+
+}
+
+.btn:hover,
+
+.quote-btn:hover,
+
+button:hover,
+
+input[type=submit]:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 12px 25px rgba(0,0,0,.18);
+
+}
+/*=========================================================
+  animations.css
+  PART 2 (First Half)
+=========================================================*/
+
+
+/*====================================
+NAVIGATION LINKS
+====================================*/
+
+.nav-links li{
+
+    position:relative;
+
+}
+
+.nav-links li a{
+
+    position:relative;
+
+    transition:
+
+    color .35s ease;
+
+}
+
+.nav-links li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:3px;
+
+    background:#FFC107;
+
+    border-radius:50px;
+
+    transition:.35s ease;
+
+}
+
+.nav-links li a:hover::after,
+
+.nav-links li a.active::after{
+
+    width:100%;
+
+}
+
+.nav-links li a:hover{
+
+    color:#FFC107;
+
+}
+
+
+
+
+/*====================================
+LOGO
+====================================*/
+
+.logo{
+
+    transition:
+
+    transform .35s ease;
+
+}
+
+.logo:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+/*====================================
+SECTION TITLES
+====================================*/
+
+.section-title h2{
+
+    animation:fadeDown .8s ease;
+
+}
+
+.section-title p{
+
+    animation:fadeUp 1s ease;
+
+}
+
+
+
+
+/*====================================
+SERVICE CARDS
+====================================*/
+
+.service-card{
+
+    overflow:hidden;
+
+}
+
+.service-card img{
+
+    transition:
+
+    transform .45s ease;
+
+}
+
+.service-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+
+
+
+/*====================================
+PROJECT CARDS
+====================================*/
+
+.project-card{
+
+    overflow:hidden;
+
+}
+
+.project-card img{
+
+    transition:.45s ease;
+
+}
+
+.project-card:hover img{
+
+    transform:scale(1.1);
+
+}
+
+
+
+
+/*====================================
+CERTIFICATE
+====================================*/
+
+.certificate-box{
+
+    overflow:hidden;
+
+}
+
+.certificate-box:hover{
+
+    border-bottom:5px solid #FFC107;
+
+}
+
+
+
+
+/*====================================
+CONTACT FORM
+====================================*/
+
+.project-form input,
+
+.project-form textarea,
+
+.project-form select{
+
+    transition:
+
+    border-color .3s ease,
+
+    box-shadow .3s ease,
+
+    transform .3s ease;
+
+}
+
+.project-form input:focus,
+
+.project-form textarea:focus,
+
+.project-form select:focus{
+
+    transform:translateY(-2px);
+
+}
+
+
+
+
+/*====================================
+ROOM ITEMS
+====================================*/
+
+.room-item{
+
+    transition:
+
+    background .3s ease,
+
+    transform .3s ease;
+
+}
+
+.room-item:hover{
+
+    transform:translateX(5px);
+
+}
+
+
+
+
+/*====================================
+PLUS MINUS BUTTON
+====================================*/
+
+.quantity button{
+
+    transition:
+
+    transform .25s ease,
+
+    background .3s ease;
+
+}
+
+.quantity button:hover{
+
+    transform:scale(1.12);
+
+}
+
+
+
+
+/*====================================
+SUMMARY CARD
+====================================*/
+
+.estimate-summary{
+
+    animation:zoomIn .8s ease;
+
+}
+
+
+
+
+/*====================================
+CTA SECTION
+====================================*/
+
+.estimate-banner a,
+
+.contact-cta a{
+
+    transition:
+
+    transform .35s ease,
+
+    box-shadow .35s ease;
+
+}
+
+.estimate-banner a:hover,
+
+.contact-cta a:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.25);
+
+}
+
+
+
+
+/*====================================
+FOOTER LINKS
+====================================*/
+
+.footer a{
+
+    transition:
+
+    color .3s ease,
+
+    padding-left .3s ease;
+
+}
+
+.footer a:hover{
+
+    color:#FFC107;
+
+    padding-left:8px;
+
+}
+/*=========================================================
+  animations.css
+  FINAL PART
+=========================================================*/
+
+
+/*====================================
+SOCIAL ICONS
+====================================*/
+
+.social-icons a,
+.footer-social a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    transition:
+    transform .35s ease,
+    background .35s ease,
+    color .35s ease;
+
+}
+
+.social-icons a:hover,
+.footer-social a:hover{
+
+    transform:translateY(-6px) rotate(5deg);
+
+}
+
+
+
+
+/*====================================
+WHATSAPP FLOAT BUTTON
+====================================*/
+
+.whatsapp-float{
+
+    animation:float 3s ease-in-out infinite;
+
+}
+
+.whatsapp-float:hover{
+
+    animation:none;
+
+    transform:scale(1.08);
+
+}
+
+
+
+
+/*====================================
+ICON SPIN
+====================================*/
+
+.spin-hover:hover{
+
+    animation:iconSpin .7s linear;
+
+}
+
+@keyframes iconSpin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+
+
+/*====================================
+PULSE CLASS
+====================================*/
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+
+
+
+/*====================================
+FLOAT CLASS
+====================================*/
+
+.float{
+
+    animation:float 3s ease-in-out infinite;
+
+}
+
+
+
+
+/*====================================
+SMOOTH IMAGE SHADOW
+====================================*/
+
+img{
+
+    transition:
+    transform .4s ease,
+    box-shadow .4s ease;
+
+}
+
+img:hover{
+
+    box-shadow:
+
+    0 12px 25px rgba(0,0,0,.15);
+
+}
+
+
+
+
+/*====================================
+BUTTON CLICK EFFECT
+====================================*/
+
+.btn:active,
+button:active,
+.quote-btn:active{
+
+    transform:scale(.96);
+
+}
+
+
+
+
+/*====================================
+INPUT PLACEHOLDER
+====================================*/
+
+input::placeholder,
+textarea::placeholder{
+
+    transition:.3s;
+
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder{
+
+    opacity:.5;
+
+}
+
+
+
+
+/*====================================
+LOADING SPINNER
+====================================*/
+
+.loader{
+
+    width:45px;
+
+    height:45px;
+
+    border:4px solid #e5e5e5;
+
+    border-top:4px solid #FFC107;
+
+    border-radius:50%;
+
+    animation:loaderSpin .8s linear infinite;
+
+}
+
+@keyframes loaderSpin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+
+
+/*====================================
+SCROLLBAR
+====================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f2f2f2;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#0A1F44;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#FFC107;
+
+}
+
+
+
+
+/*====================================
+REDUCED MOTION
+====================================*/
+
+@media (prefers-reduced-motion: reduce){
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+
+
+
+/*====================================
+TABLET
+====================================*/
+
+@media(max-width:992px){
+
+    .card:hover,
+    .service-card:hover,
+    .project-card:hover,
+    .why-card:hover,
+    .contact-card:hover,
+    .estimate-box:hover{
+
+        transform:translateY(-5px);
+
+    }
+
+}
+
+
+
+
+/*====================================
+MOBILE
+====================================*/
+
+@media(max-width:768px){
+
+    .logo:hover{
+
+        transform:none;
+
+    }
+
+    .btn:hover,
+    .quote-btn:hover{
+
+        transform:none;
+
+    }
+
+    .room-item:hover{
+
+        transform:none;
+
+    }
+
+    img:hover{
+
+        transform:none;
+
+    }
+
+}
+
+
+
+
+/*====================================
+END OF FILE
+====================================*/

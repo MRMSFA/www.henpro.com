@@ -1,0 +1,818 @@
+/* =========================================================
+
+   HenPro Electric Inc
+   Electrical Cost Estimator CSS
+
+   Theme:
+   Dark Blue + Yellow
+
+========================================================= */
+
+
+
+
+
+/* =========================
+   MAIN SECTION
+========================= */
+
+
+.estimator-section{
+
+    background:#f5f7fa;
+
+}
+
+
+
+
+
+
+/* =========================
+   WRAPPER
+========================= */
+
+
+.estimator-wrapper{
+
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:35px;
+
+    align-items:start;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   LEFT FORM
+========================= */
+
+
+.estimator-form{
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+.estimate-box{
+
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 30px rgba(10,31,68,.10);
+
+
+}
+
+
+
+
+
+
+.estimate-box h3{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#0A1F44;
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+.estimate-box h3 i{
+
+
+    color:#FFC107;
+
+
+}
+
+
+
+
+
+
+
+.estimate-box label{
+
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#0A1F44;
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+
+.estimate-box select{
+
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    outline:none;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+.estimate-box select:focus{
+
+
+    border-color:#FFC107;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   ROOM ITEMS
+========================= */
+
+
+.room-item{
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px;
+
+    background:#f8f9fb;
+
+    border-radius:12px;
+
+    margin-bottom:15px;
+
+    border-left:4px solid #FFC107;
+
+
+}
+
+
+
+
+
+
+.room-item h4{
+
+
+    color:#0A1F44;
+
+    margin-bottom:5px;
+
+
+}
+
+
+
+
+
+
+.room-item p{
+
+
+    font-size:13px;
+
+    color:#777;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   QUANTITY
+========================= */
+
+
+.quantity{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+
+}
+
+
+
+
+
+
+.quantity button{
+
+
+    width:35px;
+
+    height:35px;
+
+    border:none;
+
+    background:#0A1F44;
+
+    color:white;
+
+    border-radius:50%;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.quantity button:hover{
+
+
+    background:#FFC107;
+
+    color:#0A1F44;
+
+
+}
+
+
+
+
+
+
+.quantity input{
+
+
+    width:50px;
+
+    height:35px;
+
+    text-align:center;
+
+    border:1px solid #ddd;
+
+    border-radius:5px;
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   CHECKBOX SERVICES
+========================= */
+
+
+.check{
+
+
+    display:flex !important;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#f8f9fb;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+
+
+.check input{
+
+
+    width:18px;
+
+    height:18px;
+
+    accent-color:#FFC107;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   SUMMARY CARD
+========================= */
+
+
+.estimate-summary{
+
+
+    background:#0A1F44;
+
+    color:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    position:sticky;
+
+    top:100px;
+
+
+}
+
+
+
+
+
+.estimate-summary h3{
+
+
+    color:#FFC107;
+
+    font-size:26px;
+
+    margin-bottom:30px;
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+
+.summary-item{
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:18px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.2);
+
+
+}
+
+
+
+
+
+
+
+.summary-item strong{
+
+
+    color:#FFC107;
+
+
+}
+
+
+
+
+
+
+
+.final-price{
+
+
+    margin-top:30px;
+
+    background:#FFC107;
+
+    color:#0A1F44;
+
+    text-align:center;
+
+    padding:25px;
+
+    border-radius:12px;
+
+
+}
+
+
+
+
+
+.final-price h4{
+
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+
+
+.final-price h2{
+
+
+    font-size:32px;
+
+    font-weight:800;
+
+
+}
+
+
+
+
+
+
+
+
+
+.note{
+
+
+    margin-top:20px;
+
+    font-size:13px;
+
+    line-height:1.6;
+
+    color:#ddd;
+
+
+}
+
+
+
+
+
+
+
+.estimate-contact{
+
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:25px;
+
+    padding:15px;
+
+    background:#FFC107;
+
+    color:#0A1F44;
+
+    font-weight:700;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.estimate-contact:hover{
+
+
+    background:white;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   CTA
+========================= */
+
+
+.estimate-banner{
+
+
+    background:#0A1F44;
+
+    padding:70px 20px;
+
+    text-align:center;
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+.estimate-banner h2{
+
+
+    color:#FFC107;
+
+    font-size:35px;
+
+
+}
+
+
+
+
+
+
+.estimate-banner a{
+
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#FFC107;
+
+    color:#0A1F44;
+
+    padding:14px 35px;
+
+    border-radius:8px;
+
+    font-weight:700;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+
+@media(max-width:1000px){
+
+
+
+.estimator-wrapper{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+
+.estimate-summary{
+
+
+    position:relative;
+
+    top:0;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:600px){
+
+
+
+.estimate-box{
+
+
+    padding:20px;
+
+
+}
+
+
+
+
+.room-item{
+
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+
+}
+
+
+
+
+
+.quantity{
+
+
+    width:100%;
+
+    justify-content:flex-end;
+
+
+}
+
+
+
+
+
+
+.estimate-summary h3{
+
+
+    font-size:22px;
+
+
+}
+
+
+
+
+.final-price h2{
+
+
+    font-size:25px;
+
+
+}
+
+
+
+}
+/* =========================
+   MOBILE LIVE ESTIMATE BAR
+========================= */
+
+.mobile-estimate-bar{
+    display:none;
+}
+
+
+@media(max-width:600px){
+
+.mobile-estimate-bar{
+
+    display:flex;
+
+    position:fixed;
+
+    bottom:15px;
+
+    left:15px;
+
+    right:15px;
+
+    background:#0A1F44;
+
+    color:white;
+
+    padding:15px 20px;
+
+    border-radius:12px;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+
+.mobile-estimate-bar strong{
+
+    color:#FFC107;
+
+}
+
+}

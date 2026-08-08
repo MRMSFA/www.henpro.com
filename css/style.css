@@ -1,0 +1,1522 @@
+
+/* =========================================================
+
+   HenPro Electric Inc
+   Main Website CSS
+   Theme: Dark Blue + Yellow
+
+========================================================= */
+
+
+/* =========================
+   ROOT VARIABLES
+========================= */
+
+:root {
+
+    --primary-color: #0A1F44;
+    --secondary-color: #FFC107;
+
+    --dark-color: #08111F;
+
+    --text-color: #444444;
+
+    --light-bg: #F5F7FA;
+
+    --white: #FFFFFF;
+
+    --border-color: #E5E7EB;
+
+    --success-color: #16A34A;
+
+    --shadow:
+    0 10px 30px rgba(10,31,68,0.12);
+
+    --transition:
+    all 0.3s ease;
+
+}
+
+
+
+
+
+/* =========================
+   RESET
+========================= */
+
+
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+
+html {
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body {
+
+    font-family:'Poppins',sans-serif;
+
+    background:#ffffff;
+
+    color:var(--text-color);
+
+    line-height:1.7;
+
+}
+
+
+
+img {
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+
+a {
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+
+ul {
+
+    list-style:none;
+
+}
+
+
+
+button {
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+}
+
+
+
+
+/* =========================
+   GLOBAL CLASSES
+========================= */
+
+
+.container {
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+.section {
+
+    padding:90px 0;
+
+}
+
+
+
+.section-title {
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.section-title h2 {
+
+    font-size:38px;
+
+    font-weight:700;
+
+    color:var(--primary-color);
+
+    position:relative;
+
+    display:inline-block;
+
+}
+
+
+
+.section-title h2::after {
+
+
+    content:"";
+
+    position:absolute;
+
+    width:60px;
+
+    height:4px;
+
+    background:var(--secondary-color);
+
+    bottom:-10px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+
+
+.section-title p {
+
+    margin-top:20px;
+
+    color:#777;
+
+}
+
+
+
+
+/* =========================
+   HEADER NAVBAR
+========================= */
+
+
+.header {
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    background:var(--white);
+
+    z-index:1000;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+}
+
+
+
+.navbar {
+
+    height:80px;
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+
+
+
+/* LOGO */
+
+
+.logo {
+
+    font-size:26px;
+
+    font-weight:800;
+
+    color:var(--primary-color);
+
+    letter-spacing:.5px;
+
+}
+
+
+
+.logo span {
+
+    color:var(--secondary-color);
+
+}
+
+
+
+
+
+/* NAV LINKS */
+
+
+.nav-links {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+
+
+.nav-links li {
+
+    position:relative;
+
+}
+
+
+
+.nav-links a {
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:var(--dark-color);
+
+    transition:var(--transition);
+
+}
+
+
+
+.nav-links a:hover,
+
+.nav-links a.active {
+
+    color:var(--secondary-color);
+
+}
+
+
+
+.nav-links a::after {
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:3px;
+
+    background:var(--secondary-color);
+
+    transition:var(--transition);
+
+}
+
+
+
+.nav-links a:hover::after,
+
+.nav-links a.active::after {
+
+    width:100%;
+
+}
+
+
+
+
+
+/* QUOTE BUTTON */
+
+
+.quote-btn {
+
+
+    background:var(--secondary-color);
+
+    color:var(--primary-color);
+
+    padding:12px 25px;
+
+    border-radius:5px;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+}
+
+
+
+.quote-btn:hover {
+
+
+    background:var(--primary-color);
+
+    color:white;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+
+/* HAMBURGER */
+
+
+.hamburger {
+
+
+    display:none;
+
+    font-size:28px;
+
+    color:var(--primary-color);
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+
+.hero {
+
+
+    height:100vh;
+
+    min-height:700px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    position:relative;
+
+    background:
+
+
+    linear-gradient(
+
+    rgba(10,31,68,0.85),
+
+    rgba(10,31,68,0.85)
+
+    ),
+
+
+    url("https://tse3.mm.bing.net/th/id/OIP.PjQ42UD8TmsAkwzSGYPzUQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+
+}
+
+
+
+.hero-content {
+
+
+    max-width:900px;
+
+    padding-top:70px;
+
+    color:white;
+
+    position:relative;
+
+    z-index:2;
+
+
+}
+
+
+
+
+.hero h1 {
+
+
+    font-size:55px;
+
+    line-height:1.2;
+
+    font-weight:800;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.hero h1 span {
+
+
+    color:var(--secondary-color);
+
+}
+
+
+
+.hero p {
+
+
+    font-size:18px;
+
+    max-width:750px;
+
+    margin:auto;
+
+    margin-bottom:35px;
+
+    color:#f1f1f1;
+
+}
+
+
+
+
+
+
+/* HERO BUTTONS */
+
+
+.hero-buttons {
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+
+}
+
+
+
+.btn {
+
+
+    padding:14px 35px;
+
+    border-radius:6px;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+    display:inline-block;
+
+}
+
+
+
+
+.primary-btn {
+
+
+    background:var(--secondary-color);
+
+    color:var(--primary-color);
+
+
+}
+
+
+
+.primary-btn:hover {
+
+
+    background:white;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+.secondary-btn {
+
+
+    border:2px solid white;
+
+    color:white;
+
+
+}
+
+
+
+.secondary-btn:hover {
+
+
+    background:var(--secondary-color);
+
+    border-color:var(--secondary-color);
+
+    color:var(--primary-color);
+
+
+}
+
+
+
+
+
+/* =========================
+   CARD COMMON STYLE
+========================= */
+
+
+.card {
+
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:35px 25px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+
+
+.card:hover {
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+
+.card i {
+
+
+    font-size:45px;
+
+    color:var(--secondary-color);
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.card h3 {
+
+
+    color:var(--primary-color);
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+.card p {
+
+
+    color:#666;
+
+}
+
+
+
+/* =========================================================
+   HenPro Electric Inc
+   Main Website CSS
+   Part 2
+========================================================= */
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+
+.about-content {
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+
+
+.about-text h3 {
+
+    font-size:32px;
+
+    color:var(--primary-color);
+
+    margin-bottom:15px;
+
+}
+
+
+
+.about-text h3::first-letter {
+
+    color:var(--secondary-color);
+
+}
+
+
+
+.about-text p {
+
+    margin-bottom:15px;
+
+    color:#555;
+
+}
+
+
+
+.read-more {
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 25px;
+
+    background:var(--primary-color);
+
+    color:white;
+
+    border-radius:5px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+
+
+.read-more:hover {
+
+    background:var(--secondary-color);
+
+    color:var(--primary-color);
+
+}
+
+
+
+
+.about-box {
+
+    background:white;
+
+    padding:45px 30px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+    border-top:5px solid var(--secondary-color);
+
+}
+
+
+
+.about-icon {
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:var(--primary-color);
+
+    color:var(--secondary-color);
+
+    font-size:35px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.about-box h4 {
+
+    font-size:22px;
+
+    color:var(--primary-color);
+
+    margin-bottom:10px;
+
+}
+
+
+
+
+
+
+/* =========================
+   SERVICES SECTION
+========================= */
+
+
+.cards {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.card a {
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    color:var(--primary-color);
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+}
+
+
+
+.card a:hover {
+
+    color:var(--secondary-color);
+
+}
+
+
+
+
+
+.services-preview {
+
+    background:var(--light-bg);
+
+}
+
+
+
+
+
+
+/* =========================
+   WHY CHOOSE SECTION
+========================= */
+
+
+.why-section {
+
+    background:white;
+
+}
+
+
+
+.why-cards {
+
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+
+.why-card {
+
+
+    padding:40px 25px;
+
+    text-align:center;
+
+    background:white;
+
+    border-radius:12px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+
+}
+
+
+
+.why-card:hover {
+
+
+    transform:translateY(-10px);
+
+    border-bottom:4px solid var(--secondary-color);
+
+
+}
+
+
+
+.why-card i {
+
+
+    font-size:45px;
+
+    color:var(--secondary-color);
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.why-card h3 {
+
+
+    color:var(--primary-color);
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.why-card p {
+
+
+    color:#666;
+
+}
+
+
+
+
+
+/* =========================
+   PROJECT SECTION
+========================= */
+
+
+.projects-preview {
+
+
+    background:var(--light-bg);
+
+
+}
+
+
+
+.project-box {
+
+
+    padding:60px 40px;
+
+    text-align:center;
+
+    background:white;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+
+}
+
+
+
+.project-box i {
+
+
+    font-size:55px;
+
+    color:var(--secondary-color);
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.project-box h3 {
+
+
+    font-size:28px;
+
+    color:var(--primary-color);
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.project-box a {
+
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 30px;
+
+    background:var(--primary-color);
+
+    color:white;
+
+    border-radius:5px;
+
+    font-weight:600;
+
+
+}
+
+
+
+.project-box a:hover {
+
+
+    background:var(--secondary-color);
+
+    color:var(--primary-color);
+
+
+}
+
+
+
+
+
+
+/* =========================
+   ESTIMATE BANNER
+========================= */
+
+
+.estimate-banner {
+
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    var(--primary-color),
+
+    #142f62
+
+    );
+
+
+    color:white;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+
+}
+
+
+
+
+.estimate-banner h2 {
+
+
+    font-size:38px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.estimate-banner p {
+
+
+    font-size:17px;
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+
+.estimate-banner a {
+
+
+    display:inline-block;
+
+    padding:14px 35px;
+
+    background:var(--secondary-color);
+
+    color:var(--primary-color);
+
+    border-radius:6px;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+
+}
+
+
+
+.estimate-banner a:hover {
+
+
+    background:white;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+
+.footer {
+
+
+    background:var(--dark-color);
+
+    color:white;
+
+    padding:70px 0 20px;
+
+
+}
+
+
+
+
+.footer-content {
+
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:40px;
+
+
+}
+
+
+
+.footer h3 {
+
+
+    font-size:26px;
+
+    color:var(--secondary-color);
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+.footer h4 {
+
+
+    color:var(--secondary-color);
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.footer p {
+
+
+    color:#ddd;
+
+}
+
+
+
+.footer a {
+
+
+    display:block;
+
+    color:#ddd;
+
+    margin-bottom:10px;
+
+    transition:var(--transition);
+
+
+}
+
+
+
+.footer a:hover {
+
+
+    color:var(--secondary-color);
+
+
+}
+
+
+
+
+.copyright {
+
+
+    margin-top:40px;
+
+    padding-top:20px;
+
+    border-top:1px solid rgba(255,255,255,.2);
+
+    text-align:center;
+
+    color:#bbb;
+
+
+}
+
+
+
+
+
+
+/* =========================
+   BACK TO TOP BUTTON
+========================= */
+
+
+.back-top {
+
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--secondary-color);
+
+    color:var(--primary-color);
+
+    border-radius:50%;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:var(--transition);
+
+
+}
+
+
+
+.back-top.show {
+
+
+    opacity:1;
+
+    visibility:visible;
+
+
+}
+
+
+
+
+
+
+/* =========================
+   FORM ELEMENTS
+========================= */
+
+
+input,
+textarea,
+select {
+
+
+    width:100%;
+
+    padding:14px 15px;
+
+    border:1px solid var(--border-color);
+
+    outline:none;
+
+    border-radius:5px;
+
+    font-family:'Poppins',sans-serif;
+
+
+}
+
+
+
+input:focus,
+textarea:focus,
+select:focus {
+
+
+    border-color:var(--secondary-color);
+
+
+}
+
+
+
+
+button {
+
+
+    border:none;
+
+}
+
+
+
+
+
+/* =========================
+   GLOBAL HOVER EFFECTS
+========================= */
+
+
+.hover-effect {
+
+
+    transition:var(--transition);
+
+
+}
+
+
+
+.hover-effect:hover {
+
+
+    transform:translateY(-8px);
+
+}
+
+
+
+
+
+/* =========================
+   LOADER
+========================= */
+
+
+.loader {
+
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:9999;
+
+
+}
+
+
+
+.loader span {
+
+
+    width:50px;
+
+    height:50px;
+
+    border:5px solid #ddd;
+
+    border-top-color:var(--secondary-color);
+
+    border-radius:50%;
+
+    animation:rotate 1s linear infinite;
+
+
+}
+
+
+
+@keyframes rotate {
+
+
+    from {
+
+        transform:rotate(0deg);
+
+    }
+
+
+    to {
+
+        transform:rotate(360deg);
+
+    }
+
+
+}
+
+
+
+
+/* =========================
+   END STYLE CSS
+========================= */
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+
+.logo img{
+
+    width:45px;
+    height:45px;
+    object-fit:contain;
+
+}

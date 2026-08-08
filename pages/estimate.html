@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Electrical Cost Estimator | HenPro Electric Inc</title>
+<link rel="icon" type="image/png" href="../images/logo.png">
+
+<meta name="description"
+content="Calculate your approximate project cost with HenProElectric Inc estimation system.">
+
+
+<!-- Google Font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="stylesheet" href="../css/responsive.css">
+
+<link rel="stylesheet" href="../css/pages.css">
+
+<link rel="stylesheet" href="../css/estimate.css">
+
+<link rel="stylesheet" href="../css/animations.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+
+<nav class="navbar">
+
+
+<a href="../index.html" class="logo">
+
+    <img src="../images/logo.png" alt="HenPro Electric Inc Logo">
+
+<span>HenPro</span>
+Electric Inc
+
+</a>
+
+
+
+
+
+<ul class="nav-links" id="navLinks">
+
+
+<li>
+<a href="../index.html">
+Home
+</a>
+</li>
+
+
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+
+
+<li>
+<a href="services.html">
+Services
+</a>
+</li>
+
+
+
+<li>
+<a href="projects.html">
+Projects
+</a>
+</li>
+
+
+
+<li>
+<a href="certifications.html">
+Certifications
+</a>
+</li>
+
+
+
+<li>
+<a class="active" href="estimate.html">
+Estimate
+</a>
+</li>
+
+
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+
+
+</ul>
+
+
+
+
+
+<a href="contact.html" class="quote-btn">
+
+Get Quote
+
+</a>
+
+
+
+
+<div class="hamburger" id="hamburger">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+<!-- ================= HERO ================= -->
+
+
+<section class="page-hero animate-fade-up">
+
+
+<div class="page-overlay"></div>
+
+
+
+<div class="page-title animate-fade-up">
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- ================= ESTIMATOR ================= -->
+
+
+<section class="section estimator-section">
+
+
+<div class="container">
+
+
+
+
+
+<div class="section-title animate-fade-up">
+
+
+<h2>
+
+Build Your Estimate
+
+</h2>
+
+
+<p>
+
+Select your requirements and get an approximate project cost instantly.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="estimator-wrapper">
+
+
+
+
+
+
+
+<!-- LEFT SIDE -->
+
+
+<div class="estimator-form">
+
+
+
+
+
+
+
+<!-- PROPERTY TYPE -->
+
+
+<div class="estimate-box">
+
+
+<h3>
+
+<i class="fa-solid fa-house"></i>
+
+Property Details
+
+</h3>
+
+
+
+
+<label>
+
+Project Type
+
+</label>
+
+
+
+<select id="projectType">
+
+
+<option value="residential">
+
+Residential House
+
+</option>
+
+
+
+<option value="commercial">
+
+Commercial Building
+
+</option>
+
+
+
+</select>
+
+
+
+
+
+
+<label>
+
+House Size
+
+</label>
+
+
+
+<select id="houseSize">
+
+
+<option value="small">
+
+120 Sq Yd
+
+</option>
+
+
+
+<option value="medium">
+
+200 Sq Yd
+
+</option>
+
+
+
+<option value="large">
+
+500 Sq Yd
+
+</option>
+
+
+
+<option value="custom">
+
+Custom
+
+</option>
+
+
+
+</select>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ROOMS -->
+
+
+<div class="estimate-box">
+
+
+<h3>
+
+<i class="fa-solid fa-door-open"></i>
+
+Select Rooms
+
+</h3>
+
+
+
+
+
+<div class="room-item">
+
+
+<div>
+
+
+<h4>
+
+Bedroom
+
+</h4>
+
+
+<p>
+
+Lights + Fan + Sockets + AC Point
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="quantity">
+
+
+<button type="button"
+class="minus">
+
+−
+
+</button>
+
+
+
+<input type="number"
+class="room-count"
+data-room="bedroom"
+value="0"
+min="0">
+
+
+
+<button type="button"
+class="plus">
+
++
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="room-item">
+
+
+<div>
+
+
+<h4>
+
+Drawing Room
+
+</h4>
+
+
+<p>
+
+Lighting + Power Points
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="quantity">
+
+
+<button type="button"
+class="minus">
+
+−
+
+</button>
+
+
+
+<input type="number"
+class="room-count"
+data-room="drawing"
+value="0"
+min="0">
+
+
+
+<button type="button"
+class="plus">
+
++
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<!-- ================= TV LOUNGE ================= -->
+
+<div class="room-item">
+
+
+<div>
+
+<h4>
+
+TV Lounge
+
+</h4>
+
+
+<p>
+
+TV Point + Lighting + Sockets
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="quantity">
+
+
+<button type="button"
+class="minus">
+
+−
+
+</button>
+
+
+
+<input type="number"
+class="room-count"
+data-room="lounge"
+value="0"
+min="0">
+
+
+
+<button type="button"
+class="plus">
+
++
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= KITCHEN ================= -->
+
+
+<div class="room-item">
+
+
+<div>
+
+<h4>
+
+Kitchen
+
+</h4>
+
+
+<p>
+
+Appliances + Lighting + Power Points
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="quantity">
+
+
+<button type="button"
+class="minus">
+
+−
+
+</button>
+
+
+
+<input type="number"
+class="room-count"
+data-room="kitchen"
+value="0"
+min="0">
+
+
+
+<button type="button"
+class="plus">
+
++
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= BATHROOM ================= -->
+
+
+<div class="room-item">
+
+
+<div>
+
+<h4>
+
+Bathroom
+
+</h4>
+
+
+<p>
+
+Light + Exhaust + Geyser Point
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="quantity">
+
+
+<button type="button"
+class="minus">
+
+−
+
+</button>
+
+
+
+<input type="number"
+class="room-count"
+data-room="bathroom"
+value="0"
+min="0">
+
+
+
+<button type="button"
+class="plus">
+
++
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= GARAGE ================= -->
+
+
+<div class="room-item">
+
+
+<div>
+
+<h4>
+
+Garage
+
+</h4>
+
+
+<p>
+
+Lighting + Power Point
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="quantity">
+
+
+<button type="button"
+class="minus">
+
+−
+
+</button>
+
+
+
+<input type="number"
+class="room-count"
+data-room="garage"
+value="0"
+min="0">
+
+
+
+<button type="button"
+class="plus">
+
++
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= EXTRA SERVICES ================= -->
+
+
+<div class="estimate-box">
+
+
+<h3>
+
+<i class="fa-solid fa-bolt"></i>
+
+Additional Services
+
+</h3>
+
+
+
+
+
+<label class="check">
+
+
+<input type="checkbox"
+class="service"
+data-price="25000">
+
+
+AC Wiring
+
+</label>
+
+
+
+
+
+<label class="check">
+
+
+<input type="checkbox"
+class="service"
+data-price="40000">
+
+
+Solar Wiring Preparation
+
+</label>
+
+
+
+
+
+
+<label class="check">
+
+
+<input type="checkbox"
+class="service"
+data-price="30000">
+
+
+CCTV Wiring
+
+</label>
+
+
+
+
+
+
+<label class="check">
+
+
+<input type="checkbox"
+class="service"
+data-price="15000">
+
+
+Internet / Networking
+
+</label>
+
+
+
+
+
+
+<label class="check">
+
+
+<input type="checkbox"
+class="service"
+data-price="20000">
+
+
+Generator Wiring
+
+</label>
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= SUMMARY ================= -->
+
+
+<div class="estimate-summary animate-fade-up">
+
+
+<h3>
+
+Your Estimate
+
+</h3>
+
+
+
+
+<div class="summary-item">
+
+
+<span>
+
+Electrical Points
+
+</span>
+
+
+<strong id="totalPoints">
+
+0
+
+</strong>
+
+
+</div>
+
+
+
+
+
+
+<div class="summary-item">
+
+
+<span>
+
+Rooms Selected
+
+</span>
+
+
+<strong id="totalRooms">
+
+0
+
+</strong>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="summary-item">
+
+
+<span>
+
+Additional Services
+
+</span>
+
+
+<strong id="serviceTotal">
+
+PKR 0
+
+</strong>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="final-price">
+
+
+<h4>
+
+Approximate Cost
+
+</h4>
+
+
+<h2 id="finalCost">
+
+PKR 0
+
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+<p class="note">
+
+
+*This is an approximate calculation. Final quotation will be prepared after project discussion and site visit.
+
+
+</p>
+
+
+
+
+
+
+
+<a href="contact.html"
+class="estimate-contact">
+
+
+Request Detailed Quote
+
+
+</a>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= CTA ================= -->
+
+
+<section class="estimate-banner">
+
+
+<div class="container">
+
+
+<h2>
+
+Need Final Project Pricing?
+
+</h2>
+
+
+
+<p>
+
+Contact HenPro Electric Inc for a detailed quotation.
+
+</p>
+
+
+
+
+
+<a href="contact.html">
+
+Contact HenPro
+
+</a>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- MOBILE LIVE ESTIMATE BAR -->
+
+<div class="mobile-estimate-bar">
+
+    <span>
+        Estimated Cost
+    </span>
+
+    <strong id="mobileFinalCost">
+        PKR 0
+    </strong>
+
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
+<footer class="footer">
+
+
+<div class="container">
+
+
+<div class="footer-content">
+
+
+
+<div>
+
+
+<h3>
+
+HenPro Electric Inc
+
+</h3>
+
+
+<p>
+
+Professional Electrical Solutions & Contracting Services.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div>
+
+
+<h4>
+
+Quick Links
+
+</h4>
+
+
+
+<a href="../index.html">
+
+Home
+
+</a>
+
+
+
+<a href="services.html">
+
+Services
+
+</a>
+
+
+
+<a href="contact.html">
+
+Contact
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h4>
+
+Owner
+
+</h4>
+
+
+
+<p>
+
+Muneeb Ur Rehman
+</p>
+<p>
+Electronic Engineer
+</p>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="copyright">
+
+
+© 2026 HenPro Electric Inc. All Rights Reserved.
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+<script src="../js/navigation.js"></script>
+
+<script src="../js/main.js"></script>
+
+<script src="../js/estimate.js"></script>
+
+
+
+
+
+</body>
+
+</html>

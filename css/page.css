@@ -1,0 +1,806 @@
+/* =========================================================
+
+   HenPro Electric Inc
+   Inner Pages CSS
+
+   Theme: Dark Blue + Yellow
+
+========================================================= */
+
+
+
+/* =========================
+   INNER PAGE HERO
+========================= */
+
+
+.page-hero {
+
+
+    height:450px;
+
+    background:
+
+    linear-gradient(
+    rgba(10,31,68,.85),
+    rgba(10,31,68,.85)
+    ),
+
+    url("../images/electrical-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    position:relative;
+
+
+}
+
+
+
+
+
+.page-title {
+
+
+    color:white;
+
+    position:relative;
+
+    z-index:2;
+
+
+}
+
+
+
+
+.page-title h1 {
+
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+    font-weight:800;
+
+
+}
+
+
+
+.page-title p {
+
+
+    font-size:18px;
+
+    color:#FFC107;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   SERVICE PAGE
+========================= */
+
+
+.service-list {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+.service-list ul {
+
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    list-style:none;
+
+
+}
+
+
+
+.service-list li {
+
+
+    padding:18px;
+
+    background:#f5f7fa;
+
+    border-left:4px solid #FFC107;
+
+    color:#0A1F44;
+
+    font-weight:600;
+
+    border-radius:5px;
+
+
+}
+
+
+
+.service-list i {
+
+
+    color:#FFC107;
+
+    margin-right:10px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   PROJECT PAGE
+========================= */
+
+
+.project-intro {
+
+
+    text-align:center;
+
+    background:white;
+
+    padding:50px 30px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+.project-intro i {
+
+
+    font-size:60px;
+
+    color:#FFC107;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+.project-intro h3 {
+
+
+    color:#0A1F44;
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+.project-gallery {
+
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+.gallery-placeholder {
+
+
+    height:250px;
+
+    background:#f5f7fa;
+
+    border-radius:15px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    border:2px dashed #FFC107;
+
+
+}
+
+
+
+.gallery-placeholder i {
+
+
+    font-size:55px;
+
+    color:#0A1F44;
+
+
+}
+
+
+
+.gallery-placeholder h3 {
+
+
+    color:#0A1F44;
+
+    margin-top:15px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   CERTIFICATION PAGE
+========================= */
+
+
+.certificate-grid {
+
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+.certificate-box {
+
+
+    background:white;
+
+    padding:40px 25px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.certificate-box:hover {
+
+
+    transform:translateY(-10px);
+
+    border-bottom:4px solid #FFC107;
+
+
+}
+
+
+
+
+
+.certificate-box i {
+
+
+    font-size:50px;
+
+    color:#FFC107;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.certificate-box h3 {
+
+
+    color:#0A1F44;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+.certificate-box a {
+
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:10px 25px;
+
+    background:#0A1F44;
+
+    color:white;
+
+    border-radius:5px;
+
+
+}
+
+
+
+
+.certificate-box a:hover {
+
+
+    background:#FFC107;
+
+    color:#0A1F44;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+
+.contact-wrapper {
+
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+
+}
+
+
+
+
+
+.contact-info {
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+.contact-card {
+
+
+    background:white;
+
+    padding:25px;
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:center;
+
+    border-radius:12px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+
+.contact-card i {
+
+
+    width:55px;
+
+    height:55px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#0A1F44;
+
+    color:#FFC107;
+
+    border-radius:50%;
+
+    font-size:22px;
+
+
+}
+
+
+
+
+
+.contact-card h3 {
+
+
+    color:#0A1F44;
+
+    margin-bottom:5px;
+
+
+}
+
+
+
+
+
+.contact-card a {
+
+
+    color:#555;
+
+
+}
+
+
+
+
+
+
+
+.contact-form {
+
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+
+.contact-form h3 {
+
+
+    color:#0A1F44;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+.form-group {
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.contact-form textarea {
+
+
+    resize:none;
+
+
+}
+
+
+
+
+
+.contact-form button {
+
+
+    width:100%;
+
+    padding:15px;
+
+    background:#FFC107;
+
+    color:#0A1F44;
+
+    font-weight:700;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   MAP BOX
+========================= */
+
+
+.map-box {
+
+
+    height:300px;
+
+    background:#0A1F44;
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:15px;
+
+    text-align:center;
+
+
+}
+
+
+
+
+.map-box i {
+
+
+    font-size:60px;
+
+    color:#FFC107;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media(max-width:900px){
+
+
+
+.page-title h1 {
+
+
+    font-size:38px;
+
+
+}
+
+
+
+
+.contact-wrapper {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+.project-gallery,
+.certificate-grid {
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+
+.service-list ul {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:600px){
+
+
+
+.page-hero {
+
+
+    height:350px;
+
+
+}
+
+
+
+
+.page-title h1 {
+
+
+    font-size:30px;
+
+
+}
+
+
+
+
+.page-title p {
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+.project-gallery,
+.certificate-grid {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+.contact-card {
+
+
+    flex-direction:column;
+
+    text-align:center;
+
+
+}
+
+
+
+
+.contact-form {
+
+
+    padding:25px;
+
+
+}
+
+
+
+}

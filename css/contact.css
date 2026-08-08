@@ -1,0 +1,1056 @@
+ /*=========================================================
+ HenPro Electric Inc
+ Contact Page Premium CSS
+ PART 1
+=========================================================*/
+
+
+
+/* ================= CONTACT HERO ================= */
+
+
+.contact-hero{
+
+    height:85vh;
+
+    background:
+
+    linear-gradient(
+    rgba(10,31,68,.88),
+    rgba(10,31,68,.88)
+    ),
+
+    url("https://static.vecteezy.com/system/resources/thumbnails/037/371/045/small_2x/ai-generated-electrical-engineer-checks-the-voltage-of-the-electrical-at-the-terminal-in-the-main-distribution-board-ai-generative-photo.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+
+
+.contact-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+
+
+.contact-hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    color:white;
+
+    max-width:900px;
+
+    padding:20px;
+
+}
+
+
+
+
+.contact-hero-content h1{
+
+    font-size:55px;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.contact-hero-content p{
+
+    font-size:20px;
+
+    line-height:1.7;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.contact-hero-content a{
+
+    display:inline-block;
+
+    background:#FFC107;
+
+    color:#0A1F44;
+
+    padding:15px 35px;
+
+    border-radius:8px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+
+
+.contact-hero-content a:hover{
+
+    background:white;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+
+
+
+
+/* ================= CONTACT SECTION ================= */
+
+
+
+.contact-section{
+
+    padding:90px 0;
+
+    background:#f6f8fb;
+
+}
+
+
+
+
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    align-items:start;
+
+}
+
+
+
+
+
+
+
+
+
+/* ================= CONTACT INFO ================= */
+
+
+
+.small-title{
+
+    color:#FFC107;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+
+
+
+
+.contact-info h2{
+
+    font-size:38px;
+
+    color:#0A1F44;
+
+    margin:15px 0;
+
+}
+
+
+
+
+.contact-info>p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+
+
+
+
+
+
+
+
+/* ================= CONTACT BOX ================= */
+
+
+
+.contact-box{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    background:white;
+
+    padding:22px;
+
+    border-radius:15px;
+
+    margin-bottom:18px;
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.08);
+
+
+    transition:.3s;
+
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+.contact-box:hover{
+
+
+    transform:translateX(8px);
+
+    border-left:5px solid #FFC107;
+
+
+}
+
+
+
+
+
+.contact-box i{
+
+
+    width:55px;
+
+    height:55px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#0A1F44;
+
+    color:#FFC107;
+
+    font-size:22px;
+
+
+}
+
+
+
+
+
+.contact-box h4{
+
+
+    color:#0A1F44;
+
+    margin-bottom:5px;
+
+
+}
+
+
+
+
+.contact-box p,
+
+.contact-box span{
+
+
+    color:#666;
+
+}
+
+
+
+
+
+/* ================= PHONE OPTIONS ================= */
+
+
+
+.phone-options{
+
+
+    display:none;
+
+    background:white;
+
+    margin-top:-10px;
+
+    margin-bottom:20px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.1);
+
+
+}
+
+
+
+
+
+.phone-options.show{
+
+
+    display:block;
+
+
+}
+
+
+
+
+
+
+.phone-options a{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px;
+
+    margin-bottom:10px;
+
+    background:#0A1F44;
+
+    color:white;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+.phone-options a:last-child{
+
+
+    margin-bottom:0;
+
+
+}
+
+
+
+
+
+
+.phone-options a:hover{
+
+
+    background:#FFC107;
+
+    color:#0A1F44;
+
+
+}
+
+
+
+
+
+.phone-options i{
+
+
+    color:#FFC107;
+
+}
+
+
+
+
+
+.phone-options a:hover i{
+
+
+    color:#0A1F44;
+
+
+}
+
+
+
+
+
+
+
+
+/* ================= EMAIL CARD ================= */
+
+
+
+.email-box{
+
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+
+
+
+.email-box:hover{
+
+
+    border-left:5px solid #FFC107;
+
+
+}
+
+
+
+
+
+/* ================= ENQUIRY CARD ================= */
+
+
+
+.enquiry-card{
+
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.10);
+
+
+}
+
+
+
+
+.enquiry-card h2{
+
+
+    color:#0A1F44;
+
+    font-size:32px;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+
+.enquiry-card>p{
+
+
+    color:#666;
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ================= FORM ================= */
+
+
+
+.form-row{
+
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+.enquiry-card input,
+
+.enquiry-card select,
+
+.enquiry-card textarea{
+
+
+    width:100%;
+
+    padding:16px 18px;
+
+    margin-bottom:20px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-family:Poppins,sans-serif;
+
+    font-size:15px;
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.enquiry-card input:focus,
+
+.enquiry-card select:focus,
+
+.enquiry-card textarea:focus{
+
+
+    border-color:#FFC107;
+
+    box-shadow:0 0 0 3px rgba(255,193,7,.2);
+
+
+}
+
+
+
+
+
+
+
+.enquiry-card textarea{
+
+
+    resize:none;
+
+
+}
+
+
+
+
+
+
+
+
+/* ================= SEND BUTTON ================= */
+
+
+
+.enquiry-card button{
+
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#0A1F44;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.enquiry-card button i{
+
+
+    margin-right:8px;
+
+    color:#FFC107;
+
+
+}
+
+
+
+
+
+.enquiry-card button:hover{
+
+
+    background:#FFC107;
+
+    color:#0A1F44;
+
+
+}
+
+
+
+
+
+
+.enquiry-card button:hover i{
+
+
+    color:#0A1F44;
+
+
+}
+
+
+
+
+
+
+
+
+#formMessage{
+
+
+    margin-top:15px;
+
+    font-weight:600;
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ================= TRUST SECTION ================= */
+
+
+
+.contact-trust{
+
+
+    padding:80px 0;
+
+    background:#0A1F44;
+
+
+}
+
+
+
+
+
+.trust-grid{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+
+.trust-grid div{
+
+
+    background:white;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.trust-grid div:hover{
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+
+
+
+
+.trust-grid i{
+
+
+    font-size:40px;
+
+    color:#FFC107;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.trust-grid h3{
+
+
+    color:#0A1F44;
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+
+
+
+
+.trust-grid p{
+
+
+    color:#666;
+
+    line-height:1.7;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ================= WHATSAPP BUTTON ================= */
+
+
+
+.whatsapp-button{
+
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    background:#25D366;
+
+    color:white;
+
+    padding:15px 25px;
+
+    border-radius:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-weight:700;
+
+    z-index:999;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.25);
+
+
+}
+
+
+
+
+
+.whatsapp-button i{
+
+
+    font-size:25px;
+
+
+}
+
+
+
+
+
+
+.whatsapp-button:hover{
+
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+
+
+
+
+/* ================= RESPONSIVE ================= */
+
+
+
+@media(max-width:900px){
+
+
+
+.contact-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+.form-row{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+
+.trust-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+.contact-hero-content h1{
+
+
+    font-size:38px;
+
+
+}
+
+
+
+
+.enquiry-card{
+
+
+    padding:25px;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:600px){
+
+
+
+.contact-section{
+
+
+    padding:50px 15px;
+
+
+}
+
+
+
+
+
+.contact-info h2{
+
+
+    font-size:28px;
+
+
+}
+
+
+
+
+.contact-hero{
+
+
+    height:70vh;
+
+
+}
+
+
+
+
+.contact-hero-content p{
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+.contact-box{
+
+
+    padding:18px;
+
+
+}
+
+
+
+
+.whatsapp-button{
+
+
+    right:15px;
+
+    bottom:15px;
+
+    padding:12px 18px;
+
+
+}
+
+
+
+
+}
