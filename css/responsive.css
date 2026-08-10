@@ -285,7 +285,24 @@
 
 
 @media (max-width:600px) {
+@media (max-width:768px){
 
+    .nav-links{
+        align-items:flex-start;
+    }
+
+    .nav-links li{
+        width:100%;
+    }
+
+    .nav-links li a{
+        display:block;
+        width:100%;
+        text-align:left;
+        padding-left:25px;
+    }
+
+}
 
 
     .container {
@@ -540,6 +557,7 @@
 
 
 @media (max-width:400px) {
+    
 
 
 
